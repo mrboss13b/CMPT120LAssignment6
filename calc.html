@@ -1,1 +1,43 @@
-html file
+<!DOCTYPE html>
+<html>
+<head>
+<title>Triangle and Fibonacci Calculators</title>
+</head>
+<h1>Mark's Triangle and Fibonacci Calculators of Wonder and Prosperity</h1>
+<body>
+<p>Ready? Lets do math!</p>
+
+<form name= "userNumber" action="#">
+<label>Enter a Whole Number</label>
+<input id="userNumber" type="text"/>
+
+<input name="submit" type="submit" value="Select" onclick="alert('you chose' + ' ' + userNumber.value + ' ' + 'thats my favorite number')"/>
+	<script language= "javaScript" type= "Text/javaScript">
+	
+</script>
+</form>
+<h2>
+<script language= "javaScript" type= "text/JavaScript">
+var n = document.getElementById('userNumber');
+	
+var triangleNum = function() {
+  if (n <= 0) return 0;
+  return (n * (n + 1)) / 2;
+}
+
+
+var fibboNth = function(){
+	if (n>2) {
+	return(n-2) + (n-1);
+	}else{
+	return 1;
+	}
+}
+document.write(triangleNum().value);
+document.write(fibboNth().value);
+
+</script>
+</h2> 
+</body>
+
+</html>
